@@ -1,0 +1,2 @@
+void generateRandomColor();
+void handleFx();
