@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "4d943c5e-1a04-4baf-be64-6dd36b85e21c",
+		"name": "rgb desk light api",
+		"description": "this is the api documentation for rgb desk light apis, hosted in the ESP8266 chip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "root(welcome data)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.11",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "color/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.11/color/get",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"11"
+					],
+					"path": [
+						"color",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "color/set",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"red\": 255,\r\n    \"green\": 217,\r\n    \"blue\": 48\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.11/color/set",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"11"
+					],
+					"path": [
+						"color",
+						"set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "brightness/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.11/brightness/get",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"11"
+					],
+					"path": [
+						"brightness",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "brightness/set",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brightness\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.205/brightness/set",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"205"
+					],
+					"path": [
+						"brightness",
+						"set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fx/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.7/fx/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"7"
+					],
+					"path": [
+						"fx",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fx/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.205/fx/get",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"205"
+					],
+					"path": [
+						"fx",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fx/set",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fx\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.205/fx/set",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"205"
+					],
+					"path": [
+						"fx",
+						"set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "speed/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.205/speed/get",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"205"
+					],
+					"path": [
+						"speed",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "speed/set",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"speed\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.205/speed/set",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"205"
+					],
+					"path": [
+						"speed",
+						"set"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
